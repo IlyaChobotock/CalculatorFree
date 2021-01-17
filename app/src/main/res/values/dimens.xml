@@ -79,4 +79,8 @@
     <dimen name="layout_width_b_equal">0dp</dimen>
     <dimen name="margin_start_b_equal">5dp</dimen>
     <dimen name="text_size_b_equal">40sp</dimen>
+    <dimen name="text_size_w_sign_memory">40sp</dimen>
+    <dimen name="text_size_w_sign">40sp</dimen>
+    <dimen name="text_size_w_input">80sp</dimen>
+    <dimen name="text_size_w_output">80sp</dimen>
 </resources>
