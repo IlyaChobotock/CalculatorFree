@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/white"
     android:orientation="vertical"
     android:padding="10dp"
+    android:theme="@style/MyStyleCalculator"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -19,7 +21,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/window_sign_memory"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -28,7 +30,7 @@
                 android:text="@string/text_null"
                 android:textSize="@dimen/text_size_w_sign_memory" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/window_sign"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -39,7 +41,7 @@
 
         </LinearLayout>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/window_input"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -48,7 +50,7 @@
             android:text="@string/text_null"
             android:textSize="@dimen/text_size_w_input" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/window_output"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -64,7 +66,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_mc"
             android:layout_width="@dimen/layout_width_b_mc"
             android:layout_height="wrap_content"
@@ -74,7 +76,7 @@
             android:text="@string/mc"
             android:textSize="@dimen/text_size_b_mc" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_mr"
             android:layout_width="@dimen/layout_width_b_mr"
             android:layout_height="wrap_content"
@@ -85,7 +87,7 @@
             android:text="@string/mr"
             android:textSize="@dimen/text_size_b_mr" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_m_plus"
             android:layout_width="@dimen/layout_width_b_m_plus"
             android:layout_height="wrap_content"
@@ -96,7 +98,7 @@
             android:text="@string/m"
             android:textSize="@dimen/text_size_b_m_plus" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_m_sub"
             android:layout_width="@dimen/layout_width_b_m_sub"
             android:layout_height="wrap_content"
@@ -113,7 +115,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_clear"
             android:layout_width="@dimen/layout_width_b_clear"
             android:layout_height="wrap_content"
@@ -123,7 +125,7 @@
             android:text="@string/clear"
             android:textSize="@dimen/text_size_b_clear" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_percent"
             android:layout_width="@dimen/layout_width_b_percent"
             android:layout_height="wrap_content"
@@ -134,7 +136,7 @@
             android:text="@string/percent"
             android:textSize="@dimen/text_size_b_percent" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_div"
             android:layout_width="@dimen/layout_width_b_div"
             android:layout_height="wrap_content"
@@ -151,7 +153,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
             android:layout_width="@dimen/layout_width_b_7"
             android:layout_height="wrap_content"
@@ -161,7 +163,7 @@
             android:text="@string/_7"
             android:textSize="@dimen/text_size_b_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
             android:layout_width="@dimen/layout_width_b_8"
             android:layout_height="wrap_content"
@@ -172,7 +174,7 @@
             android:text="@string/_8"
             android:textSize="@dimen/text_size_b_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
             android:layout_width="@dimen/layout_width_b_9"
             android:layout_height="wrap_content"
@@ -183,7 +185,7 @@
             android:text="@string/_9"
             android:textSize="@dimen/color_b_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_multiply"
             android:layout_width="@dimen/layout_width_b_multiply"
             android:layout_height="wrap_content"
@@ -200,7 +202,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
             android:layout_width="@dimen/layout_width_b_4"
             android:layout_height="wrap_content"
@@ -210,7 +212,7 @@
             android:text="@string/_4"
             android:textSize="@dimen/text_size_b_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
             android:layout_width="@dimen/layout_width_b_5"
             android:layout_height="wrap_content"
@@ -221,7 +223,7 @@
             android:text="@string/_5"
             android:textSize="@dimen/text_size_b_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
             android:layout_width="@dimen/layout_width_b_6"
             android:layout_height="wrap_content"
@@ -232,7 +234,7 @@
             android:text="@string/_6"
             android:textSize="@dimen/text_size_b_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_sub"
             android:layout_width="@dimen/layout_width_b_sub"
             android:layout_height="wrap_content"
@@ -249,7 +251,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
             android:layout_width="@dimen/layout_width_b_1"
             android:layout_height="wrap_content"
@@ -259,7 +261,7 @@
             android:text="@string/_1"
             android:textSize="@dimen/text_size_b_1" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
             android:layout_width="@dimen/layout_width_b_2"
             android:layout_height="wrap_content"
@@ -270,7 +272,7 @@
             android:text="@string/_2"
             android:textSize="@dimen/text_size_b_2" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
             android:layout_width="@dimen/layout_width_b_3"
             android:layout_height="wrap_content"
@@ -281,7 +283,7 @@
             android:text="@string/_3"
             android:textSize="@dimen/text_size_b_3" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_sum"
             android:layout_width="@dimen/layout_width_b_sum"
             android:layout_height="wrap_content"
@@ -298,7 +300,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
             android:layout_width="@dimen/layout_width_b_0"
             android:layout_height="wrap_content"
@@ -308,7 +310,7 @@
             android:text="@string/_0"
             android:textSize="@dimen/text_size_b_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_00"
             android:layout_width="@dimen/layout_width_b_00"
             android:layout_height="wrap_content"
@@ -319,7 +321,7 @@
             android:text="@string/_00"
             android:textSize="@dimen/text_size_b_00" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_point"
             android:layout_width="@dimen/layout_width_b_point"
             android:layout_height="wrap_content"
@@ -330,7 +332,7 @@
             android:text="@string/point"
             android:textSize="@dimen/text_size_b_point" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_equal"
             android:layout_width="@dimen/layout_width_b_equal"
             android:layout_height="wrap_content"
@@ -338,7 +340,9 @@
             android:layout_weight="1"
             android:backgroundTint="@color/color_b_equal"
             android:text="@string/eq"
-            android:textSize="@dimen/text_size_b_equal" />
+            android:textSize="@dimen/text_size_b_equal"
+            app:cornerRadius="0dp"
+            app:elevation="0dp" />
 
     </LinearLayout>
 
