@@ -1,5 +1,6 @@
 package ru.geekbrains.calculatorfree;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -48,6 +49,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         findViews();
         initClickListeners();
+
+        Button btnSettings = findViewById(R.id.settings);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Чтобы стартовать активити, надо подготовить интент
+                // В данном случае это будет явный интент, поскольку здесь передаётся класс активити
+                Intent runSettings = new Intent(MainActivity.this, SettingsActivity.class);
+                // Метод стартует активити, указанную в интенте
+                startActivity(runSettings);
+            }
+        });
     }
 
     @Override
