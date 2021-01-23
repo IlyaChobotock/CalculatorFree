@@ -30,4 +30,6 @@
     <color name="color_b_00">#C59F30</color>
     <color name="color_b_point">#C59F30</color>
     <color name="color_b_equal">#6D9EB5</color>
+    <color name="color_text_b_settings">#E4292A2B</color>
+    <color name="color_b_settings">#CFBFBA</color>
 </resources>

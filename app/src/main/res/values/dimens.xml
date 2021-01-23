@@ -81,6 +81,8 @@
     <dimen name="text_size_b_equal">40sp</dimen>
     <dimen name="text_size_w_sign_memory">40sp</dimen>
     <dimen name="text_size_w_sign">40sp</dimen>
-    <dimen name="text_size_w_input">80sp</dimen>
-    <dimen name="text_size_w_output">80sp</dimen>
+    <dimen name="text_size_w_input">60sp</dimen>
+    <dimen name="text_size_w_output">60sp</dimen>
+    <dimen name="text_size_b_settings">14sp</dimen>
+    <dimen name="corn_rad_b_settings">20dp</dimen>
 </resources>

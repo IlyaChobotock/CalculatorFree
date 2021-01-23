@@ -24,4 +24,5 @@
     <string name="point">.</string>
     <string name="eq">=</string>
     <string name="text_null" />
+    <string name="text_b_settings">Settings</string>
 </resources>
