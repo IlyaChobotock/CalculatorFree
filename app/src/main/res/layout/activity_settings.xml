@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FF6E40"
-                android:text="Crazy theme"
+                android:text="Van Gogh theme"
                 android:textSize="20sp"
                 app:buttonTint="#FF6E40" />
 
