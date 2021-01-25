@@ -1,15 +1,16 @@
 package ru.geekbrains.calculatorfree;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.Nullable;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends ThemesActivity implements View.OnClickListener {
 
-    private Calculations calculations = new Calculations();
+    private Calculations calculations;
     private TextView windowSign;
     private TextView windowInput;
     private TextView windowOutput;
@@ -37,17 +38,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button_m_plus;
     private Button button_mr;
     private Button button_mc;
+    private Button settings;
+    private final static int REQUEST_CODE = 99;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Установка темы
+        setTheme(getAppTheme(getThemeChoosen()));
         setContentView(R.layout.activity_main);
+        calculations = new Calculations();
         initView();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode != REQUEST_CODE) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
+        if (requestCode == REQUEST_CODE) {
+            recreate();
+        }
     }
 
     private void initView() {
         findViews();
         initClickListeners();
+
+        Button btnSettings = findViewById(R.id.settings);
+        btnSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Чтобы стартовать активити, необходимо подготовить интент
+                // В данном случае это будет явный интент, поскольку здесь передаётся класс активити
+                Intent runSettings = new Intent(MainActivity.this, SettingsActivity.class);
+                // Метод стартует активити, указанную в интенте
+                startActivityForResult(runSettings, REQUEST_CODE);
+            }
+        });
     }
 
     @Override
@@ -184,6 +213,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         windowSignMemory = findViewById(R.id.window_sign_memory);
         windowInput = findViewById(R.id.window_input);
         windowOutput = findViewById(R.id.window_output);
+        settings = findViewById(R.id.settings);
     }
 
 //    private void setShowResultText() {

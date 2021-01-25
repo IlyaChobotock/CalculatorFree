@@ -24,4 +24,10 @@
     <string name="point">.</string>
     <string name="eq">=</string>
     <string name="text_null" />
+    <string name="text_b_settings">Settings</string>
+    <string name="calculator_theme_settings">Calculator theme settings:</string>
+    <string name="light_theme">Light theme</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="van_gogh_theme">Van Gogh theme</string>
+    <string name="return_settings">Return</string>
 </resources>
