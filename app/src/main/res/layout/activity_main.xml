@@ -6,7 +6,7 @@
     android:background="@drawable/white"
     android:orientation="vertical"
     android:padding="10dp"
-    android:theme="@style/MyStyleCalculator"
+    android:theme="@style/LightTheme"
     tools:context=".MainActivity">
 
     <LinearLayout

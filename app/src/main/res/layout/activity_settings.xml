@@ -25,10 +25,12 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/r_buttons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/r_b_light_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:buttonTint="#AEACAC"
@@ -38,6 +40,7 @@
                 app:buttonTint="#AEACAC" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/r_b_dark_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:buttonTint="#020202"
@@ -46,6 +49,7 @@
                 app:buttonTint="#000000" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/r_b_van_gogh_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:buttonTint="#FF6E40"
@@ -60,11 +64,11 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_return"
         android:layout_width="wrap_content"
-        android:textColor="@color/color_text_b_settings"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
         android:layout_marginEnd="20dp"
         android:text="Return"
+        android:textColor="@color/color_text_b_settings"
         app:backgroundTint="@color/color_b_settings" />
 
 </LinearLayout>
