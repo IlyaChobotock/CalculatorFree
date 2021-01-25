@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/white"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:theme="@style/LightTheme"
+    android:padding="@dimen/act_main_padding"
     tools:context=".MainActivity">
 
     <LinearLayout

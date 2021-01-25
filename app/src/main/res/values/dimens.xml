@@ -85,4 +85,12 @@
     <dimen name="text_size_w_output">60sp</dimen>
     <dimen name="text_size_b_settings">14sp</dimen>
     <dimen name="corn_rad_b_settings">20dp</dimen>
+    <dimen name="setttings_marg_top">260dp</dimen>
+    <dimen name="set_text_size">24sp</dimen>
+    <dimen name="set_margin">5dp</dimen>
+    <dimen name="r_b_text_size_light_theme">20sp</dimen>
+    <dimen name="r_b_text_size_dark_theme">20sp</dimen>
+    <dimen name="r_b_text_size_van_gogh_theme">20sp</dimen>
+    <dimen name="b_return_magin_end">20dp</dimen>
+    <dimen name="act_main_padding">10dp</dimen>
 </resources>

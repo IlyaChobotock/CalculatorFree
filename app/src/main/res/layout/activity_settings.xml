@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/white"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".SettingsActivity">
@@ -12,16 +11,16 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_margin="50dp"
+        android:layout_marginTop="@dimen/setttings_marg_top"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="Calculator theme settings: "
+            android:layout_margin="@dimen/set_margin"
+            android:text="@string/calculator_theme_settings"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/set_text_size"
             android:textStyle="bold" />
 
         <RadioGroup
@@ -33,29 +32,29 @@
                 android:id="@+id/r_b_light_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="#AEACAC"
-                android:text="Light theme"
-                android:textColorHighlight="#FFFFFF"
-                android:textSize="20sp"
-                app:buttonTint="#AEACAC" />
+                android:buttonTint="@color/r_b_light_theme"
+                android:text="@string/light_theme"
+                android:textColorHighlight="@color/r_b_light_theme_hl"
+                android:textSize="@dimen/r_b_text_size_light_theme"
+                app:buttonTint="@color/r_b_light_theme_tint" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/r_b_dark_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="#020202"
-                android:text="Dark theme"
-                android:textSize="20sp"
-                app:buttonTint="#000000" />
+                android:buttonTint="@color/r_b_dark_theme"
+                android:text="@string/dark_theme"
+                android:textSize="@dimen/r_b_text_size_dark_theme"
+                app:buttonTint="@color/r_b_dark_theme_tint" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/r_b_van_gogh_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:buttonTint="#FF6E40"
-                android:text="Van Gogh theme"
-                android:textSize="20sp"
-                app:buttonTint="#FF6E40" />
+                android:buttonTint="@color/r_b_van_gogh_theme"
+                android:text="@string/van_gogh_theme"
+                android:textSize="@dimen/r_b_text_size_van_gogh_theme"
+                app:buttonTint="@color/r_b_van_gogh_theme_tin" />
 
         </RadioGroup>
 
@@ -66,8 +65,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:layout_marginEnd="20dp"
-        android:text="Return"
+        android:layout_marginEnd="@dimen/b_return_magin_end"
+        android:text="@string/return_settings"
         android:textColor="@color/color_text_b_settings"
         app:backgroundTint="@color/color_b_settings" />
 
